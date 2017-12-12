@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{DFF6A400-87DD-4A92-9F56-2D54CB3569B4}</ProjectGuid>
+    <ProjectGuid>{5F46BE38-98E7-4F0D-B8B8-941A2959762F}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>Pajarracos</RootNamespace>
     <AssemblyName>Pajarracos</AssemblyName>
