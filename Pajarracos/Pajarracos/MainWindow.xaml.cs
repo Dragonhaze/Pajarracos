@@ -23,10 +23,13 @@ namespace Pajarracos
         public MainWindow()
         {
             InitializeComponent();
-            music();
+            
            
         }
-        private void music()
+        
+            
+        
+        private void Button1_Click(object sender, RoutedEventArgs e)
         {
             SoundPlayer My_JukeBox = new SoundPlayer(@"Sonidos\Bird-singing-song.wav");
             try
@@ -38,9 +41,6 @@ namespace Pajarracos
                 // Write error.
                 Console.WriteLine(ex);
             }
-        }
-        private void Button1_Click(object sender, RoutedEventArgs e)
-        {
 
             int opcion = combo1.SelectedIndex;
 
