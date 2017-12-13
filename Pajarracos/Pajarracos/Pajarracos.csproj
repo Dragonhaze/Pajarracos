@@ -100,5 +100,8 @@
   <ItemGroup>
     <Resource Include="imagenes\306ee29175885b796917486c2008a310.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="Sonidos\Bird-singing-song.wav" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
