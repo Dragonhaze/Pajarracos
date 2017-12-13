@@ -109,6 +109,7 @@
     <Resource Include="imagenes\buho.jpg" />
     <Resource Include="imagenes\owl.ico" />
     <Resource Include="owl.ico" />
+    <Resource Include="imagenes\informacion.png" />
     <Content Include="Sonidos\Bird-singing-song.wav" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
