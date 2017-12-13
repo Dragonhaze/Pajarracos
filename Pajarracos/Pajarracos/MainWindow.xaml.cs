@@ -15,9 +15,7 @@ using System.Windows.Shapes;
 
 namespace Pajarracos
 {
-    /// <summary>
-    /// Lógica de interacción para MainWindow.xaml
-    /// </summary>
+  
     public partial class MainWindow : Window
     {
         public MainWindow()
