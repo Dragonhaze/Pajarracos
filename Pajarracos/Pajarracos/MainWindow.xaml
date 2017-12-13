@@ -8,16 +8,20 @@
         Title="Pajareria" Height="350" Width="525">
     <Grid>
         <Grid.Background>
-            <ImageBrush/>
+            <ImageBrush ImageSource="imagenes/buho.jpg"/>
         </Grid.Background>
         <ComboBox x:Name="combo1" HorizontalAlignment="Left" Margin="191,151,0,0" VerticalAlignment="Top" Width="142" >
+
+            
+
             <ComboBoxItem IsSelected="True">-- Añadir Pájaro --</ComboBoxItem>
             <ComboBoxItem>-- Añadir Venta --</ComboBoxItem>
             <ComboBoxItem>-- Consultar Pájaros --</ComboBoxItem>
             <ComboBoxItem>-- Consultar Clientes --</ComboBoxItem>
         </ComboBox>
-        <Image  Margin="10,10,10,194" Name="image1"  Stretch="Uniform" 
-           Source="imagenes\titulo1b.png" RenderTransformOrigin="0.5,0.5" />
         <Button x:Name="btn1" Content="GOGO" HorizontalAlignment="Left" Margin="221,209,0,0" VerticalAlignment="Top" Width="75" IsCancel="True" Click="Button1_Click" />
+
+        
+
     </Grid>
 </Window>
