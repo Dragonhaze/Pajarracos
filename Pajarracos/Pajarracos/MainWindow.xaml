@@ -10,12 +10,12 @@
         <Grid.Background>
             <ImageBrush ImageSource="imagenes/buho.jpg"/>
         </Grid.Background>
-        <ComboBox x:Name="combo1" HorizontalAlignment="Left" Margin="188,241,0,0" VerticalAlignment="Top" Width="142" >
-            <ComboBoxItem IsSelected="True">-- Añadir Pájaro --</ComboBoxItem>
-            <ComboBoxItem>-- Añadir Venta --</ComboBoxItem>
-            <ComboBoxItem>-- Consultar Pájaros --</ComboBoxItem>
-            <ComboBoxItem>-- Consultar Clientes --</ComboBoxItem>
+        <ComboBox x:Name="combo1" HorizontalAlignment="Center" Margin="192,242,188,0" VerticalAlignment="Top" Width="137" Foreground="#fcac02" >
+            <ComboBoxItem Background="#323232" IsSelected="True">- Añadir Pájaro</ComboBoxItem>
+            <ComboBoxItem Background="#323232">- Añadir Venta</ComboBoxItem>
+            <ComboBoxItem Background="#323232">- Consultar Pájaros</ComboBoxItem>
+            <ComboBoxItem Background="#323232">- Consultar Clientes</ComboBoxItem>
         </ComboBox>
-        <Button x:Name="btn1" Content="GOGO" HorizontalAlignment="Left" Margin="223,281,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button x:Name="btn1" Content="GOGO" HorizontalAlignment="Left" Margin="223,281,0,0" VerticalAlignment="Top" Width="75" Background="#323232" Foreground="#fcac02"/>
     </Grid>
 </Window>
