@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
+using System.Media;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -21,6 +23,45 @@ namespace Pajarracos
         public MainWindow()
         {
             InitializeComponent();
+            music();
+           
+        }
+        private void music()
+        {
+            SoundPlayer My_JukeBox = new SoundPlayer(@"Sonidos\Bird-singing-song.wav");
+            try
+            {
+                My_JukeBox.Play();
+            }
+            catch (FileNotFoundException ex)
+            {
+                // Write error.
+                Console.WriteLine(ex);
+            }
+        }
+        private void Button1_Click(object sender, RoutedEventArgs e)
+        {
+
+            int opcion = combo1.SelectedIndex;
+
+
+
+            switch (opcion)
+            {
+                case 0:
+
+                    break;
+                case 1:
+
+                    break;
+
+                case 2:
+
+                    break;
+                case 3:
+                    break;
+
+            }
         }
     }
 }
