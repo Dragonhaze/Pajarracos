@@ -7,6 +7,11 @@
         mc:Ignorable="d"
         Title="Pajareria" Height="350" Width="525">
     <Grid>
-        
+        <ComboBox x:Name="combo1" HorizontalAlignment="Left" Margin="185,208,0,0" VerticalAlignment="Top" Width="120" >
+            <ComboBoxItem IsSelected="True">-- Añadir Pájaro --</ComboBoxItem>
+            <ComboBoxItem>-- Añadir Venta --</ComboBoxItem>
+            <ComboBoxItem>-- Consultar Pájaros --</ComboBoxItem>
+            <ComboBoxItem>-- Consultar Clientes --</ComboBoxItem>
+        </ComboBox>
     </Grid>
 </Window>
