@@ -16,6 +16,6 @@
             <ComboBoxItem Background="#323232">- Consultar Pájaros</ComboBoxItem>
             <ComboBoxItem Background="#323232">- Consultar Clientes</ComboBoxItem>
         </ComboBox>
-        <Button x:Name="btn1" Content="GOGO" HorizontalAlignment="Left" Margin="223,281,0,0" VerticalAlignment="Top" Width="75" Background="#323232" Foreground="#fcac02"/>
+        <Button x:Name="btn1" Content="GOGO" HorizontalAlignment="Left" Margin="223,281,0,0" VerticalAlignment="Top" Width="75" Background="#323232" Foreground="#fcac02" Click="btn1_Click"/>
     </Grid>
 </Window>

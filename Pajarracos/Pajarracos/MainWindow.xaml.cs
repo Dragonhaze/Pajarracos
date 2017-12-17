@@ -27,20 +27,20 @@ namespace Pajarracos
            
         }
         
-            
-        
-        private void Button1_Click(object sender, RoutedEventArgs e)
+
+        private void btn1_Click(object sender, RoutedEventArgs e)
         {
-            SoundPlayer My_JukeBox = new SoundPlayer(@"Sonidos\Bird-singing-song.wav");
+
+            SoundPlayer My_JukeBox = new SoundPlayer(@"Sonidos/Bird-singing-song.wav");
             try
             {
                 My_JukeBox.Play();
             }
             catch (FileNotFoundException ex)
             {
-                // Write error.
                 Console.WriteLine(ex);
             }
+
 
             int opcion = combo1.SelectedIndex;
 
@@ -49,16 +49,18 @@ namespace Pajarracos
             switch (opcion)
             {
                 case 0:
+                    Window1 window = new Window1();
 
+                    window.ShowDialog();
                     break;
                 case 1:
 
                     break;
-
                 case 2:
 
                     break;
                 case 3:
+
                     break;
 
             }
