@@ -17,11 +17,11 @@ using MySql.Data.MySqlClient;
 namespace Pajarracos
 {
     /// <summary>
-    /// Lógica de interacción para Window1.xaml
+    /// Lógica de interacción para AddPajaro.xaml
     /// </summary>
-    public partial class Window1 : Window
+    public partial class AddPajaro : Window
     {
-        public Window1()
+        public AddPajaro()
         {
             InitializeComponent();
         }

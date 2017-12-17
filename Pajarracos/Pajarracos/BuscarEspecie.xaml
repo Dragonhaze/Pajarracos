@@ -8,10 +8,10 @@
         Title="BuscarEspecie" Height="300" Width="423.941">
     <Grid>
         <TextBlock HorizontalAlignment="Left" Margin="104,25,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="210"><Run Text="Introduce la es"/><Run Text="pecie que quiere buscar "/></TextBlock>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="144,47,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txt1" HorizontalAlignment="Left" Height="23" Margin="144,47,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <Button Content="Buscar" HorizontalAlignment="Left" Margin="167,75,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
         <ScrollViewer HorizontalAlignment="Left" Height="144" Margin="10,115,0,0" VerticalAlignment="Top" HorizontalScrollBarVisibility="Auto" Width="396">
-            <TextBlock TextWrapping="Wrap"/>
+            <TextBlock TextWrapping="Wrap" x:Name="texto" HorizontalAlignment="Left"  VerticalAlignment="Top" Height="auto" Width="379"/>
         </ScrollViewer>
 
     </Grid>

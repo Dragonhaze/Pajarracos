@@ -50,7 +50,7 @@ namespace Pajarracos
             switch (opcion)
             {
                 case 0:
-                    Window1 window = new Window1();
+                    AddPajaro window = new AddPajaro();
 
                     window.ShowDialog();
                     break;
