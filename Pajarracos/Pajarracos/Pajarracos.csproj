@@ -70,6 +70,12 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="AddVenta.xaml.cs">
+      <DependentUpon>AddVenta.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AddVenta2.xaml.cs">
+      <DependentUpon>AddVenta2.xaml</DependentUpon>
+    </Compile>
     <Compile Include="BuscarEspecie.xaml.cs">
       <DependentUpon>BuscarEspecie.xaml</DependentUpon>
     </Compile>
@@ -77,6 +83,14 @@
     <Compile Include="Addpajaro.xaml.cs">
       <DependentUpon>Addpajaro.xaml</DependentUpon>
     </Compile>
+    <Page Include="AddVenta.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="AddVenta2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="BuscarEspecie.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

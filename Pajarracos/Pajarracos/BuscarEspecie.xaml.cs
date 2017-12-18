@@ -27,8 +27,10 @@ namespace Pajarracos
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+            
+
             string especie = txt1.Text;
-            string texto;
+            string text = texto.Text;
 
             var dbCon = DBConnection.Instance();
             dbCon.DatabaseName = "pajareria";
@@ -38,6 +40,18 @@ namespace Pajarracos
                 string query = "SELECT  * FROM PAJAROS WHERE ESPECIE = '"+especie+"';";
                 var cmd = new MySqlCommand(query, dbCon.Connection);
                 MySqlDataReader rdr = cmd.ExecuteReader();
+
+                while (rdr.Read())
+                {
+                    texto.Text += "Id del pájaro : "+rdr[0].ToString()+'\n'+
+                        "Vendido : " + rdr[1].ToString()+ '\n' +
+                        "Fecha de entrada : " + rdr[3].ToString()+ '\n' +
+                        "Fecha de nacimiento : " +rdr[4].ToString() + '\n' +
+                        "Pvp : "+rdr[5].ToString()+'\n';
+                    
+                }
+                rdr.Close();
+
 
             }
         }

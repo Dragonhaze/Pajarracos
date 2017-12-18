@@ -58,7 +58,9 @@ namespace Pajarracos
 
                     break;
                 case 2:
+                    BuscarEspecie window2 = new BuscarEspecie();
 
+                    window2.ShowDialog();
                     break;
                 case 3:
 
