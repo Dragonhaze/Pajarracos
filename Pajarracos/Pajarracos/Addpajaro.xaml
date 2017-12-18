@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:Pajarracos"
         mc:Ignorable="d"
         Title="Añadir pajaro" Height="312.076" Width="423.941" Topmost="True">
-    <Grid>
+    <Grid Background="#f8bc07">
         <Label Content="Especie" HorizontalAlignment="Left" Margin="69,63,0,0" VerticalAlignment="Top" Width="53"/>
         <Label Content="Fecha de Entrada" HorizontalAlignment="Left" Margin="69,97,0,0" VerticalAlignment="Top"/>
         <Label Content="Fecha de nacimiento" HorizontalAlignment="Left" Margin="69,127,0,0" VerticalAlignment="Top"/>
@@ -14,9 +14,8 @@
         <Label Content="Introduzca los datos del pájaro que quiera añadir" HorizontalAlignment="Left" Margin="77,10,0,0" VerticalAlignment="Top"/>
         <Label Content="PVP" HorizontalAlignment="Left" Margin="69,158,0,0" VerticalAlignment="Top"/>
         <TextBox x:Name="txt4" HorizontalAlignment="Left" Height="23" Margin="219,162,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="146"/>
-        <Button Content="Añadir" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="168,216,0,0" Click="Button_Click"/>
+        <Button Content="Añadir" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="168,216,0,0" Click="Button_Click" Background="#323232" Foreground="#fcac02"/>
         <DatePicker x:Name="txt2" HorizontalAlignment="Left" Margin="219,98,0,0" VerticalAlignment="Top" Width="146"/>
         <DatePicker x:Name="txt3"  HorizontalAlignment="Left" Margin="219,129,0,0" VerticalAlignment="Top" Width="146" Text="1"/>
-
     </Grid>
 </Window>
