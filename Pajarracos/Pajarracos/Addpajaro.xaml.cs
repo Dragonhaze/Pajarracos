@@ -44,11 +44,10 @@ namespace Pajarracos
                  string query = "SELECT COUNT(*) FROM PAJAROS;";
                  var cmd = new MySqlCommand(query, dbCon.Connection);
                  numpajaros = Convert.ToInt32(cmd.ExecuteScalar());
-                 MessageBox.Show("Número de pájaros es "+numpajaros);
             }
 
             int id = numpajaros + 1;
-
+            
             if (dbCon.IsConnect())
             {
                 if (especie == "" || fechaentrada == "" || fechanac == "" || pvp == "")
@@ -58,8 +57,13 @@ namespace Pajarracos
                 else
                 {
                     cont = 1;
+
+                    MySqlDataReader reader;
+
                     string query = "INSERT INTO PAJAROS VALUES ("+id+",FALSE,'" + especie + "','" + fechaentrada + "','" + fechanac + "'," + pvp + ");";
+
                     var cmd = new MySqlCommand(query, dbCon.Connection);
+                    reader = cmd.ExecuteReader();
                     
                     MessageBox.Show("Pájaro añadido");
                     
