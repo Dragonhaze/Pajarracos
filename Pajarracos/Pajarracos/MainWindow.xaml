@@ -5,17 +5,17 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Pajarracos"
         mc:Ignorable="d"
-        Title="Pajareria" Height="350" Width="525">
+        Title="Pajareria" Height="532.582" Width="600">
     <Grid>
         <Grid.Background>
             <ImageBrush ImageSource="imagenes/buho.jpg"/>
         </Grid.Background>
-        <ComboBox x:Name="combo1" HorizontalAlignment="Center" Margin="192,242,188,0" VerticalAlignment="Top" Width="137" Foreground="#fcac02" >
+        <ComboBox x:Name="combo1" HorizontalAlignment="Center" Margin="228,375,227,0" VerticalAlignment="Top" Width="137" Foreground="#fcac02" >
             <ComboBoxItem Background="#323232" IsSelected="True">- Añadir Pájaro</ComboBoxItem>
             <ComboBoxItem Background="#323232">- Añadir Venta</ComboBoxItem>
             <ComboBoxItem Background="#323232">- Consultar Pájaros</ComboBoxItem>
             <ComboBoxItem Background="#323232">- Consultar Clientes</ComboBoxItem>
         </ComboBox>
-        <Button x:Name="btn1" Content="GOGO" HorizontalAlignment="Left" Margin="223,281,0,0" VerticalAlignment="Top" Width="75" Background="#323232" Foreground="#fcac02" Click="btn1_Click"/>
+        <Button x:Name="btn1" Content="GOGO" HorizontalAlignment="Left" Margin="259,437,0,0" VerticalAlignment="Top" Width="75" Background="#323232" Foreground="#fcac02" Click="btn1_Click"/>
     </Grid>
 </Window>
