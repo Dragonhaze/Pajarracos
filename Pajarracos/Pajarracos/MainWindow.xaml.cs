@@ -55,15 +55,19 @@ namespace Pajarracos
                     window.ShowDialog();
                     break;
                 case 1:
-
-                    break;
-                case 2:
-                    BuscarEspecie window2 = new BuscarEspecie();
+                    AddVenta window2 = new AddVenta();
 
                     window2.ShowDialog();
                     break;
-                case 3:
+                case 2:
+                    BuscarEspecie window3 = new BuscarEspecie();
 
+                    window3.ShowDialog();
+                    break;
+                case 3:
+                    ConsultarCliente window4 = new ConsultarCliente();
+
+                    window4.ShowDialog();
                     break;
 
             }

@@ -12,7 +12,7 @@
         <Label Content="Nombre" HorizontalAlignment="Left" Margin="88,100,0,0" VerticalAlignment="Top"/>
         <TextBox x:Name="txt2" HorizontalAlignment="Left" Height="23" Margin="229,131,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <Label Content="Apellidos" HorizontalAlignment="Left" Margin="88,131,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="txt3" HorizontalAlignment="Left" Height="23" Margin="229,165,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txt3" HorizontalAlignment="Left" Height="23" Margin="229,165,0,0" TextWrapping="Wrap" PreviewTextInput="NumberValidationTextBox" VerticalAlignment="Top" Width="120"/>
         <Label Content="Telefono" HorizontalAlignment="Left" Margin="88,162,0,0" VerticalAlignment="Top"/>
         <Label Content="NIF" HorizontalAlignment="Left" Margin="88,193,0,0" VerticalAlignment="Top"/>
         <TextBox x:Name="txt4" HorizontalAlignment="Left" Height="23" Margin="229,196,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>

@@ -79,6 +79,9 @@
     <Compile Include="BuscarEspecie.xaml.cs">
       <DependentUpon>BuscarEspecie.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ConsultarCliente.xaml.cs">
+      <DependentUpon>ConsultarCliente.xaml</DependentUpon>
+    </Compile>
     <Compile Include="DBConnection.cs" />
     <Compile Include="Addpajaro.xaml.cs">
       <DependentUpon>Addpajaro.xaml</DependentUpon>
@@ -92,6 +95,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="BuscarEspecie.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ConsultarCliente.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

@@ -16,44 +16,36 @@ using System.Windows.Shapes;
 namespace Pajarracos
 {
     /// <summary>
-    /// Lógica de interacción para BuscarEspecie.xaml
+    /// Lógica de interacción para ConsultarCliente.xaml
     /// </summary>
-    public partial class BuscarEspecie : Window
+    public partial class ConsultarCliente : Window
     {
-        public BuscarEspecie()
+        public ConsultarCliente()
         {
+
+
             InitializeComponent();
-        }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            
-
-            string especie = txt1.Text;
-            string text = texto.Text;
-
             var dbCon = DBConnection.Instance();
             dbCon.DatabaseName = "pajareria";
 
             if (dbCon.IsConnect())
             {
-                string query = "SELECT  * FROM PAJAROS WHERE ESPECIE = '"+especie+"';";
+                string query = "SELECT * FROM Clientes;";
                 var cmd = new MySqlCommand(query, dbCon.Connection);
                 MySqlDataReader rdr = cmd.ExecuteReader();
 
                 while (rdr.Read())
                 {
-                    texto.Text += "Id del pájaro : "+rdr[0].ToString()+'\n'+
-                        "Vendido : " + rdr[1].ToString()+ '\n' +
-                        "Fecha de entrada : " + rdr[3].ToString()+ '\n' +
-                        "Fecha de nacimiento : " +rdr[4].ToString() + '\n' +
-                        "Pvp : "+rdr[5].ToString()+'\n'+'\n';
-                    
+                    texto.Text += "Id del cliente : " + rdr[0].ToString() + '\n' +
+                        "Nombre : " + rdr[1].ToString() + '\n' +
+                        "Apellidos : " + rdr[2].ToString() + '\n' +
+                        "Telefono : " + rdr[3].ToString() + '\n' +
+                        "NIF : " + rdr[4].ToString() + '\n'+'\n';
+
                 }
                 rdr.Close();
-                dbCon.Close();
-
             }
+            
         }
     }
 }
