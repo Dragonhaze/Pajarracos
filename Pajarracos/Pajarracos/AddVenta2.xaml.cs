@@ -115,7 +115,7 @@ namespace Pajarracos
                 reader2.Close();
             }
 
-            dbCon.Close();
+            
             this.Close();
         }
     }
