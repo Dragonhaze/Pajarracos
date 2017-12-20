@@ -41,7 +41,7 @@ namespace Pajarracos
             {
                 if (String.IsNullOrEmpty(databaseName))
                     return false;
-                string connstring = string.Format("Server=localhost; database={0}; UID=aaridom; password=acesdecandamo1", databaseName);
+                string connstring = string.Format("Server=localhost; database={0}; UID=root; password=Dragon1264#", databaseName);
                 connection = new MySqlConnection(connstring);
                 connection.Open();
             }
