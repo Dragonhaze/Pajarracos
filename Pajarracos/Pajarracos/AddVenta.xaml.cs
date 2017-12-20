@@ -69,7 +69,7 @@ namespace Pajarracos
                     string query = "INSERT INTO CLIENTES VALUES (" + id + ",'" + nombre + "','" + apellidos + "','" + telefono + "','" + nif + "');";
 
                     var cmd = new MySqlCommand(query, dbCon.Connection);
-                    reader = cmd.ExecuteReader();
+                    reader = cmd.ExecuteReader(); 
 
                     MessageBox.Show("Cliente añadido");
                     reader.Close();
