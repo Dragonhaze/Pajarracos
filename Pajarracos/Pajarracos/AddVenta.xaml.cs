@@ -66,7 +66,7 @@ namespace Pajarracos
 
                     MySqlDataReader reader;
 
-                    string query = "INSERT INTO CLIENTES VALUES (" + id + ",'" + nombre + "','" + apellidos + "','" + telefono + "','" + nif + "');";
+                    string query = "INSERT INTO CLIENTES VALUES ('" + nombre + "','" + apellidos + "','" + telefono + "','" + nif + "');";
 
                     var cmd = new MySqlCommand(query, dbCon.Connection);
                     reader = cmd.ExecuteReader();

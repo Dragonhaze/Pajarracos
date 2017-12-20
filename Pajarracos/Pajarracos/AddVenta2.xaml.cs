@@ -30,7 +30,7 @@ namespace Pajarracos
             if (dbCon.IsConnect())
             {
 
-                string query = "SELECT * FROM PAJAROS;";
+                string query = "SELECT * FROM PAJAROS WHERE VENDIDO = FALSE;";
                 var cmd = new MySqlCommand(query, dbCon.Connection);
                 MySqlDataReader rdr = cmd.ExecuteReader();
 
@@ -45,7 +45,6 @@ namespace Pajarracos
 
                 }
                 rdr.Close();
-
             }
             
         }
@@ -58,7 +57,58 @@ namespace Pajarracos
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+            string date = date1.Text;
+            int idpajaro = Convert.ToInt32(txt1.Text);
+            int idcliente = 0;
+            
 
+            var dbCon = DBConnection.Instance();
+            dbCon.DatabaseName = "pajareria";
+
+            if (dbCon.IsConnect())
+            {
+                string query = "SELECT COUNT(*) FROM CLIENTES;";
+                var cmd = new MySqlCommand(query, dbCon.Connection);
+                idcliente = Convert.ToInt32(cmd.ExecuteScalar());
+            }
+
+            
+            
+            if (dbCon.IsConnect())
+            {
+                if (date == "")
+                {
+                    date = System.DateTime.Today.ToShortDateString();
+                }
+                else
+                {
+                    
+
+                    MySqlDataReader reader;
+
+                    string query = "INSERT INTO VENTAS VALUES ('" + date + "'," + idcliente + "," + idpajaro + ");";
+
+                    var cmd = new MySqlCommand(query, dbCon.Connection);
+                    reader = cmd.ExecuteReader();
+
+                    MessageBox.Show("Venta añadida");
+                    reader.Close();
+                }
+            }
+
+            if (dbCon.IsConnect())
+            {
+                MySqlDataReader reader;
+
+                string query = "UPDATE PAJAROS SET VENDIDO=TRUE WHERE IDPAJAROS = "+idpajaro+";";
+                var cmd = new MySqlCommand(query, dbCon.Connection);
+                reader = cmd.ExecuteReader();
+
+                reader.Close();
+            }
+
+            dbCon.Close();
+            this.Close();
         }
     }
 }

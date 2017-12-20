@@ -33,20 +33,12 @@ namespace Pajarracos
             string fechaentrada = txt2.Text;
             string fechanac = txt3.Text;
             string pvp = txt4.Text;
-            int numpajaros = 0;
             int cont = 0;
 
             var dbCon = DBConnection.Instance();
             dbCon.DatabaseName = "pajareria";
 
-            if (dbCon.IsConnect())
-            {
-                 string query = "SELECT COUNT(*) FROM PAJAROS;";
-                 var cmd = new MySqlCommand(query, dbCon.Connection);
-                 numpajaros = Convert.ToInt32(cmd.ExecuteScalar());
-            }
-
-            int id = numpajaros + 1;
+            
             
             if (dbCon.IsConnect())
             {
@@ -60,7 +52,7 @@ namespace Pajarracos
 
                     MySqlDataReader reader;
 
-                    string query = "INSERT INTO PAJAROS VALUES ("+id+",FALSE,'" + especie + "','" + fechaentrada + "','" + fechanac + "'," + pvp + ");";
+                    string query = "INSERT INTO PAJAROS VALUES (FALSE,'" + especie + "','" + fechaentrada + "','" + fechanac + "'," + pvp + ");";
 
                     var cmd = new MySqlCommand(query, dbCon.Connection);
                     reader = cmd.ExecuteReader();

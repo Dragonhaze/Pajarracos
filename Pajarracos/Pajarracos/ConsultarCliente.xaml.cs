@@ -44,6 +44,7 @@ namespace Pajarracos
 
                 }
                 rdr.Close();
+                dbCon.Close();
             }
             
         }
