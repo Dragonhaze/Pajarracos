@@ -6,16 +6,16 @@
         xmlns:local="clr-namespace:Pajarracos"
         mc:Ignorable="d"
         Title="AddVenta2" Height="425.806" Width="597.022">
-    <Grid>
+    <Grid Background="#f8bc07">
         <ScrollViewer HorizontalAlignment="Left" Height="320" Margin="10,65,0,0" VerticalAlignment="Top" HorizontalScrollBarVisibility="Auto" Width="364">
             <TextBlock TextWrapping="Wrap" x:Name="texto" HorizontalAlignment="Left"  VerticalAlignment="Top" Height="auto" Width="346"/>
         </ScrollViewer>
         <Label Content="Introduzca los datos para finalizar la venta" HorizontalAlignment="Left" Margin="172,10,0,0" VerticalAlignment="Top" Width="242"/>
-        <Label Content="Introduzca la fecha" HorizontalAlignment="Left" Margin="407,100,0,0" VerticalAlignment="Top" Width="114"/>
-        <DatePicker x:Name="date1" HorizontalAlignment="Left" Margin="392,131,0,0" VerticalAlignment="Top"/>
-        <Label Content="Introduzca el id de un pájaro" HorizontalAlignment="Left" Margin="379,191,0,0" VerticalAlignment="Top" Width="165"/>
-        <TextBox x:Name="txt1" HorizontalAlignment="Left" Height="23" Margin="443,222,0,0" TextWrapping="Wrap" PreviewTextInput="NumberValidationTextBox" VerticalAlignment="Top" Width="37" RenderTransformOrigin="0.514,0.502"/>
-        <Button Content="Confirmar" HorizontalAlignment="Left" Margin="424,296,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
+        <Label Content="Introduzca la fecha" HorizontalAlignment="Left" Margin="416,100,0,0" VerticalAlignment="Top" Width="114"/>
+        <DatePicker x:Name="date1" HorizontalAlignment="Left" Margin="400,131,0,0" VerticalAlignment="Top"/>
+        <Label Content="Introduzca el ID de un pájaro" HorizontalAlignment="Left" Margin="391,191,0,0" VerticalAlignment="Top" Width="165"/>
+        <TextBox x:Name="txt1" HorizontalAlignment="Left" Height="23" Margin="455,222,0,0" TextWrapping="Wrap" PreviewTextInput="NumberValidationTextBox" VerticalAlignment="Top" Width="37" RenderTransformOrigin="0.514,0.502"/>
+        <Button Content="Confirmar" HorizontalAlignment="Left" Margin="436,296,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
 
     </Grid>
 </Window>
