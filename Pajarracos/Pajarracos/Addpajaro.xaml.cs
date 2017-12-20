@@ -71,7 +71,7 @@ namespace Pajarracos
                 
                 if(cont == 1)
                 {
-                    dbCon.Close();
+                    
                     this.Close();
                 }
 
