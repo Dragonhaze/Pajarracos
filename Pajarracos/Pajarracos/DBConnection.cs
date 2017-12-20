@@ -24,7 +24,7 @@ namespace Pajarracos
         private MySqlConnection connection = null;
         public MySqlConnection Connection
         {
-            get { return connection; }
+            get { return connection; } 
         }
 
         private static DBConnection _instance = null;
