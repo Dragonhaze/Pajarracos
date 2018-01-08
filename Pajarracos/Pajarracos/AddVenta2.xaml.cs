@@ -18,6 +18,7 @@ namespace Pajarracos
 {
     /// <summary>
     /// Lógica de interacción para AddVenta2.xaml
+    /// Ventana donde se elige el pájaro que va a ser vendido
     /// </summary>
     public partial class AddVenta2 : Window
     {
@@ -25,12 +26,14 @@ namespace Pajarracos
         {
             
             InitializeComponent();
+
+            //Al crearse se pone en un textarea todos los pájaros que hay en inventario
             var dbCon = DBConnection.Instance();
             dbCon.DatabaseName = "pajareria";
             if (dbCon.IsConnect())
             {
 
-                string query = "SELECT * FROM PAJAROS;";
+                string query = "SELECT * FROM PAJAROS WHERE VENDIDO=FALSE;";
                 var cmd = new MySqlCommand(query, dbCon.Connection);
                 MySqlDataReader rdr = cmd.ExecuteReader();
 
@@ -49,13 +52,13 @@ namespace Pajarracos
             }
             
         }
-
+        //Método que hace que no se pueda poner nada aparte de numeros en el textbox
         private void NumberValidationTextBox(object sender, TextCompositionEventArgs e)
         {
             Regex regex = new Regex("[^0-9]+");
             e.Handled = regex.IsMatch(e.Text);
         }
-
+        //Metodo que se lanza cuando se presiona el botón
         private void Button_Click(object sender, RoutedEventArgs e)
         {
 
@@ -81,29 +84,27 @@ namespace Pajarracos
                 idventa = Convert.ToInt32(cmd.ExecuteScalar());
             }
             idventa = idventa + 1;
-
+            //  Añade la venta 
             if (dbCon.IsConnect())
             {
+                //Si no ha introducido fecha se pone automaticamente la fecha actual
                 if (date == "")
                 {
                     date = System.DateTime.Today.ToShortDateString();
                 }
-                else
-                {
+                //Se añade la venta
+                MySqlDataReader reader;
 
+                string query = "INSERT INTO VENTAS VALUES ("+idventa+",'" + date + "'," + idcliente + "," + idpajaro + ");";
 
-                    MySqlDataReader reader;
+                var cmd = new MySqlCommand(query, dbCon.Connection);
+                reader = cmd.ExecuteReader();
 
-                    string query = "INSERT INTO VENTAS VALUES ("+idventa+",'" + date + "'," + idcliente + "," + idpajaro + ");";
-
-                    var cmd = new MySqlCommand(query, dbCon.Connection);
-                    reader = cmd.ExecuteReader();
-
-                    MessageBox.Show("Venta añadida");
-                    reader.Close();
-                }
+                MessageBox.Show("Venta añadida");
+                reader.Close();
+                
             }
-
+            //Cambia el atribuo vendido del pajaro que ha sido vendido
             if (dbCon.IsConnect())
             {
                 MySqlDataReader reader2;
