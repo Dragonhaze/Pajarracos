@@ -5,14 +5,18 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Pajarracos"
         mc:Ignorable="d"
-        Title="BuscarEspecie" Height="300" Width="423.941">
+        Title="BuscarEspecie" Height="532" Width="600">
     <Grid Background="#f8bc07">
-        <TextBlock HorizontalAlignment="Left" Margin="104,25,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="210"><Run Text="Introduce la es"/><Run Text="pecie que quiere buscar "/></TextBlock>
-        <TextBox x:Name="txt1" HorizontalAlignment="Left" Height="23" Margin="144,47,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <Button Content="Buscar" HorizontalAlignment="Left" Margin="144,75,0,0" VerticalAlignment="Top" Width="42" Click="Button_Click"/>
-        <ScrollViewer HorizontalAlignment="Left" Height="149" Margin="10,110,0,0" VerticalAlignment="Top" HorizontalScrollBarVisibility="Auto" Width="396">
-            <TextBlock TextWrapping="Wrap" x:Name="texto" HorizontalAlignment="Left"  VerticalAlignment="Top" Height="auto" Width="379"/>
+        <TextBlock HorizontalAlignment="Left" Margin="151,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="316" Text="Introduzca el nombre de la especie" FontSize="20"/>
+        <TextBox x:Name="txt1" HorizontalAlignment="Left" Height="23" Margin="191,47,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="210"/>
+        <Button HorizontalAlignment="Left" Margin="216,88,0,0" VerticalAlignment="Top" Width="42" Click="Button_Click" Height="61" Background="#f8bc07">
+            <Image Source="imagenes/pluma.png"/>
+        </Button>
+        <ScrollViewer HorizontalAlignment="Left" Height="310" Margin="10,181,0,0" VerticalAlignment="Top" HorizontalScrollBarVisibility="Auto" Width="572">
+            <TextBlock TextWrapping="Wrap" x:Name="texto" HorizontalAlignment="Left"  VerticalAlignment="Top" Height="auto" Width="548"/>
         </ScrollViewer>
-        <Button Content="Todos" HorizontalAlignment="Left" Margin="223,75,0,0" VerticalAlignment="Top" Width="41" Click="Button_Click_1"/>
+        <Button HorizontalAlignment="Left" Margin="338,88,0,0" VerticalAlignment="Top" Width="41" Click="Button_Click_1" Background="#f8bc07" Height="61">
+            <Image Source="imagenes/plumas.png" Height="51" Width="41"/>
+        </Button>
     </Grid>
 </Window>

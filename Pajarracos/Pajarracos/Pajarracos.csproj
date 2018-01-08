@@ -177,6 +177,11 @@
     <Resource Include="docs\MySqlConnection.xml" />
     <Resource Include="docs\MySqlCommandBuilder.xml" />
     <Resource Include="docs\MySqlCommand.xml" />
+    <Resource Include="imagenes\buho.png" />
+    <Resource Include="imagenes\pluma.png" />
+    <Resource Include="imagenes\plumas.png" />
+    <Resource Include="imagenes\guacamayo.png" />
+    <Resource Include="imagenes\grupo-de-usuarios.png" />
     <Content Include="Sonidos\Bird-singing-song.wav" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

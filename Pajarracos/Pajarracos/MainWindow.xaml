@@ -15,7 +15,10 @@
             <ComboBoxItem Background="#323232">- Añadir Venta</ComboBoxItem>
             <ComboBoxItem Background="#323232">- Consultar Pájaros</ComboBoxItem>
             <ComboBoxItem Background="#323232">- Consultar Clientes</ComboBoxItem>
+            <ComboBoxItem Background="#323232">- Generar informe</ComboBoxItem>
         </ComboBox>
-        <Button x:Name="btn1" Content="GOGO" HorizontalAlignment="Left" Margin="259,437,0,0" VerticalAlignment="Top" Width="75" Background="#323232" Foreground="#fcac02" Click="btn1_Click"/>
+        <Button x:Name="btn1" HorizontalAlignment="Left" Margin="259,437,0,0" VerticalAlignment="Top" Width="75" Background="#f8bc07" Foreground="#fcac02" Click="btn1_Click" >
+            <Image Source="imagenes/buho.png" Height="39" Width="42"/>
+        </Button>
     </Grid>
 </Window>
