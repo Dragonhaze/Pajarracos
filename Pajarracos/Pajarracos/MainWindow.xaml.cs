@@ -17,7 +17,9 @@ using System.Windows.Shapes;
 
 namespace Pajarracos
 {
-  
+    /// <summary>
+    /// Ventana principal del programa
+    /// </summary>
     public partial class MainWindow : Window
     {
         public MainWindow()
@@ -26,21 +28,14 @@ namespace Pajarracos
             
            
         }
-        
+
+        /// <summary>
+        /// Metodo que se lanza cuando se presiona el botón y abre la ventana selecionada en el combobox
+        /// </summary>
 
         private void btn1_Click(object sender, RoutedEventArgs e)
         {
 
-            SoundPlayer My_JukeBox = new SoundPlayer(@"Sonidos/Bird-singing-song.wav");
-            try
-            {
-                My_JukeBox.Play();
-            }
-            catch (FileNotFoundException ex)
-            {
-       
-                Console.WriteLine(ex);
-            }
 
 
             int opcion = combo1.SelectedIndex;

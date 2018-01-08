@@ -7,6 +7,11 @@ using System.Threading.Tasks;
 
 namespace Pajarracos
 {
+
+    /// <summary>
+    /// Clase usada para conectase a la base de datos
+    /// </summary>
+
     public class DBConnection
     {
         private DBConnection()
