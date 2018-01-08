@@ -18,7 +18,7 @@ namespace Pajarracos
 {
     /// <summary>
     /// Lógica de interacción para AddVenta.xaml
-    /// 
+    /// Ventana para añadir cliente antes de la venta final
     /// </summary>
     public partial class AddVenta : Window
     {

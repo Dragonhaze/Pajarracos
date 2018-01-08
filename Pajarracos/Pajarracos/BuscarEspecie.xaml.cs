@@ -17,6 +17,7 @@ namespace Pajarracos
 {
     /// <summary>
     /// Lógica de interacción para BuscarEspecie.xaml
+    /// Ventana para consultar los pajaros
     /// </summary>
     public partial class BuscarEspecie : Window
     {
@@ -24,11 +25,10 @@ namespace Pajarracos
         {
             InitializeComponent();
         }
-
+        //Metodo que se lanza cuando se presiona el botón de buscar
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             
-
             string especie = txt1.Text;
             string text = texto.Text;
 
@@ -55,7 +55,7 @@ namespace Pajarracos
 
             }
         }
-
+        //Metodo que se lanza cuando se presiona el botón de buscar todos
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
             var dbCon = DBConnection.Instance();

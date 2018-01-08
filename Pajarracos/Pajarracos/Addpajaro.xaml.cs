@@ -18,6 +18,7 @@ namespace Pajarracos
 {
     /// <summary>
     /// Lógica de interacción para AddPajaro.xaml
+    /// Ventana para añadir un pajaro
     /// </summary>
     public partial class AddPajaro : Window
     {
@@ -25,7 +26,7 @@ namespace Pajarracos
         {
             InitializeComponent();
         }
-
+        //Metodo que se lanza cuando se presiona el botón
         private void Button_Click(object sender, RoutedEventArgs e)
         {
 
@@ -38,7 +39,7 @@ namespace Pajarracos
 
             var dbCon = DBConnection.Instance();
             dbCon.DatabaseName = "pajareria";
-
+            //Pilla el numero total de pájaros de la bd
             if (dbCon.IsConnect())
             {
                  string query = "SELECT COUNT(*) FROM PAJAROS;";
@@ -47,7 +48,7 @@ namespace Pajarracos
             }
 
             int id = numpajaros + 1;
-            
+            //Se crea un pajaro y se añade a la bd
             if (dbCon.IsConnect())
             {
                 if (especie == "" || fechaentrada == "" || fechanac == "" || pvp == "")
@@ -68,7 +69,7 @@ namespace Pajarracos
                     MessageBox.Show("Pájaro añadido");
                     
                 }
-                
+                // Si se ha añadido correctamente se cierra la ventana
                 if(cont == 1)
                 {
                     
