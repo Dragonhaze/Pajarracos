@@ -67,12 +67,12 @@ namespace Pajarracos
                     reader = cmd.ExecuteReader();
                     
                     MessageBox.Show("Pájaro añadido");
-                    
+                    reader.Close();
                 }
                 // Si se ha añadido correctamente se cierra la ventana
                 if(cont == 1)
                 {
-                    
+                   
                     this.Close();
                 }
 
